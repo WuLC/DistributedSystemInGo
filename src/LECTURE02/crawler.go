@@ -40,9 +40,9 @@ type fetchState struct {
 }
 
 func (f *fetchState) CheckAndMark(url string) bool {
-	//defer f.mu.Unlock()
+	defer f.mu.Unlock()
 
-	//f.mu.Lock()
+	f.mu.Lock()
 	if f.fetched[url] {
 		return true
 	}
