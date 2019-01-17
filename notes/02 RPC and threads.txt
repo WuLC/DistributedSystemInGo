@@ -50,7 +50,7 @@ Threading challenges:
     e.g. wait for all Map threads to finish
     can lead to deadlocks (typically easier to notice than races)
     -> use Go channels or WaitGroup
-  granularity of concurrencyq
+  granularity of concurrency
      coarse-grained -> simple, but little concurrency/parallelism
      fine-grained -> more concurrency, more races and deadlocks
   
